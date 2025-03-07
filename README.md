@@ -8,4 +8,4 @@ EduFemme adalah website sederhana yang dibuat menggunakan HTML dan CSS sebagai b
 ## 🚀 Cara Menjalankan  
 1. Clone repository ini:  
    ```bash
-   git clone https://github.com/username/EduFemme.git
+   git clone https://github.com/pancanurull/EduFemme.git
