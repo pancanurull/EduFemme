@@ -21,5 +21,5 @@ Jika ingin menjalankan di komputer sendiri, ikuti langkah berikut:
 
 ## 📌 Teknologi yang Digunakan
 HTML
-CSS
 
+CSS
