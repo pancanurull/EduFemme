@@ -48,11 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const email = document.getElementById("email").value.trim();
             const password = document.getElementById("password").value.trim();
 
-            // **Validasi: Pastikan semua kolom terisi**
-            if (!fullName || !phone || !dob || !email || !password) {
-                //alert("⚠ Harap isi semua kolom sebelum melanjutkan!");
-                return;
-            }
+            // // **Validasi: Pastikan semua kolom terisi**
+            // if (!fullName || !phone || !dob || !email || !password) {
+            //     //alert("⚠ Harap isi semua kolom sebelum melanjutkan!");
+            //     return;
+            // }
 
             // **Menampilkan SweetAlert2 jika sign-in berhasil**
             Swal.fire({
