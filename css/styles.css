@@ -4,8 +4,31 @@
     box-sizing: border-box;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    margin: 0px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+button:hover {
+    background: #0056b3;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
+    padding: 0 auto;
     line-height: 1.6;
 }
 
@@ -30,6 +53,13 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+}
+
+.header-logo {
+    font-size: 1.2rem;
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 .header .container {
@@ -57,9 +87,9 @@ body {
 }
 
 .hero {
-    background-color: #f2f2f2;
-    padding: 50px 0;
     text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
 }
 
 .hero h1 {
@@ -76,8 +106,7 @@ body {
     margin-bottom: 30px;
 }
 
-.hero-buttons .btn-get-started,
-.hero-buttons .btn-play-video {
+.hero-buttons .btn-get-started {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -89,8 +118,7 @@ body {
     cursor: pointer;
 }
 
-.hero-buttons .btn-get-started:hover,
-.hero-buttons .btn-play-video:hover {
+.hero-buttons .btn-get-started:hover{
     background-color: #0194a8;
 }
 
@@ -383,27 +411,6 @@ form button:hover {
     margin: 0;
 }
 
-.footer-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-}
-
-.footer-nav ul li {
-    display: inline;
-}
-
-.footer-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 .footer-contact p {
     margin: 0;
 }
@@ -431,6 +438,99 @@ form button:hover {
     font-size: 14px;
     opacity: 0.8;
 }
+
+/* Modal Background (Tersembunyi Awalnya) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Konten Modal */
+.modal-content {
+    background: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    font-size: 20px;
+    color: #999;
+}
+
+/* Tombol Close */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Styling untuk link login di modal */
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+#signInForm input {
+    font-size: 15px; 
+    color: #333; 
+    padding: 10px; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+#signInForm input::placeholder {
+    font-size: 15px; 
+    color: #999; 
+}
+/* 
 
 /* Perangkat dengan lebar layar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
