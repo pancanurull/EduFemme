@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // **Validasi: Pastikan semua kolom terisi**
             if (!fullName || !phone || !dob || !email || !password) {
-                alert("⚠ Harap isi semua kolom sebelum melanjutkan!");
+                //alert("⚠ Harap isi semua kolom sebelum melanjutkan!");
                 return;
             }
 
